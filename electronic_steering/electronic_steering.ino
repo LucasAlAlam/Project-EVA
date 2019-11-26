@@ -15,7 +15,7 @@ void loop() {
     addRead = addRead + sensorValue;
   }
   sensorValue = addRead / 5000;
-  angle = 0.06557377 * sensorValue - 122.7868852
+  angle = 0.06557377 * sensorValue - 122.7868852;
   Serial.println(angle);
   delay(250);
   somaLeituras = 0;
