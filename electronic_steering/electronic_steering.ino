@@ -1,7 +1,7 @@
 /*
  * This code reading AD values and apply to a linear transfer function to know the angle of a potentiometer
 */
-int sensorPin = 15, , numRead, angle; 
+int sensorPin = 15, numRead, angle; 
 float sensorValue = 0, addRead = 0;
 
 void setup() {
@@ -18,5 +18,5 @@ void loop() {
   angle = 0.06557377 * sensorValue - 122.7868852;
   Serial.println(angle);
   delay(250);
-  somaLeituras = 0;
+  addRead = 0;
 }
